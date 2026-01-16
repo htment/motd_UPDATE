@@ -1,7 +1,7 @@
 # копируем
 
 ```
-cp update-motd-ip.sh /usr/local/bin/update-motd-ip.sh
+sudo cp update-motd-ip.sh /usr/local/bin/
 sudo chmod +x /usr/local/bin/update-motd-ip.sh
 ```
 # Создаем сервис
