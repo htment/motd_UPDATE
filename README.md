@@ -28,6 +28,18 @@ WantedBy=multi-user.target
 ```
 sudo nano /etc/systemd/system/update-motd.timer
 ```
+```
+[Unit]
+Description=Update MOTD timer
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=1h
+
+[Install]
+WantedBy=timers.target
+```
+
 # Активируем
 ```
 sudo systemctl daemon-reload
